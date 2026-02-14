@@ -29,19 +29,19 @@ const Products = () => {
   
   const products = [
     {
-      image: "/pulping.jpeg",
+      image: process.env.PUBLIC_URL + "/pulping.jpeg",
       title: t.products.step1Title,
       description: t.products.step1Desc,
       badge: t.products.step1Badge
     },
     {
-      image: "/molding.jpeg",
+      image: process.env.PUBLIC_URL + "/molding.jpeg",
       title: t.products.step2Title,
       description: t.products.step2Desc,
       badge: t.products.step2Badge
     },
     {
-      image: "/drying.jpeg",
+      image: process.env.PUBLIC_URL + "/drying.jpeg",
       title: t.products.step3Title,
       description: t.products.step3Desc,
       badge: t.products.step3Badge
@@ -53,13 +53,13 @@ const Products = () => {
       badge: t.products.step4Badge
     },
     {
-      image: "/our_final_product.jpeg",
+      image: process.env.PUBLIC_URL + "/our_final_product.jpeg",
       title: t.products.step5Title,
       description: t.products.step5Desc,
       badge: t.products.step5Badge
     },
     {
-      image: "/ready_to_use.jpeg",
+      image: process.env.PUBLIC_URL + "/ready_to_use.jpeg",
       title: t.products.step6Title,
       description: t.products.step6Desc,
       badge: t.products.step6Badge

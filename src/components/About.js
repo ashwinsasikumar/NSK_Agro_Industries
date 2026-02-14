@@ -52,7 +52,7 @@ const About = () => {
           {/* Image */}
           <div>
             <img 
-              src="/who_we_are.jpeg" 
+              src={process.env.PUBLIC_URL + "/who_we_are.jpeg"} 
               alt="Modern egg tray production facility" 
               className="rounded-lg shadow-2xl w-full"
             />
