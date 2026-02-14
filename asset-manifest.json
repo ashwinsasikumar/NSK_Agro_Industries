@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nsk-agro-landing/static/css/main.c9ec7f4b.css",
+    "main.js": "/nsk-agro-landing/static/js/main.3c401015.js",
+    "static/js/453.20f73d0d.chunk.js": "/nsk-agro-landing/static/js/453.20f73d0d.chunk.js",
+    "index.html": "/nsk-agro-landing/index.html",
+    "main.c9ec7f4b.css.map": "/nsk-agro-landing/static/css/main.c9ec7f4b.css.map",
+    "main.3c401015.js.map": "/nsk-agro-landing/static/js/main.3c401015.js.map",
+    "453.20f73d0d.chunk.js.map": "/nsk-agro-landing/static/js/453.20f73d0d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9ec7f4b.css",
+    "static/js/main.3c401015.js"
+  ]
+}
