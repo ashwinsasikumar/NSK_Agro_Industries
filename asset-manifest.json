@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/NSK_Agro_Industries/static/css/main.71256925.css",
-    "main.js": "/NSK_Agro_Industries/static/js/main.3f497534.js",
+    "main.css": "/NSK_Agro_Industries/static/css/main.75dfe66c.css",
+    "main.js": "/NSK_Agro_Industries/static/js/main.8fc518fb.js",
     "static/js/453.20f73d0d.chunk.js": "/NSK_Agro_Industries/static/js/453.20f73d0d.chunk.js",
     "index.html": "/NSK_Agro_Industries/index.html",
-    "main.71256925.css.map": "/NSK_Agro_Industries/static/css/main.71256925.css.map",
-    "main.3f497534.js.map": "/NSK_Agro_Industries/static/js/main.3f497534.js.map",
+    "main.75dfe66c.css.map": "/NSK_Agro_Industries/static/css/main.75dfe66c.css.map",
+    "main.8fc518fb.js.map": "/NSK_Agro_Industries/static/js/main.8fc518fb.js.map",
     "453.20f73d0d.chunk.js.map": "/NSK_Agro_Industries/static/js/453.20f73d0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.71256925.css",
-    "static/js/main.3f497534.js"
+    "static/css/main.75dfe66c.css",
+    "static/js/main.8fc518fb.js"
   ]
 }
