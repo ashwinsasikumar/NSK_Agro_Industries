@@ -8,7 +8,13 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
+      const heroSection = document.getElementById('hero');
+      if (heroSection) {
+        const heroBottom = heroSection.offsetHeight;
+        setIsScrolled(window.scrollY > heroBottom - 100);
+      } else {
+        setIsScrolled(window.scrollY > 100);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -28,7 +34,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50 transition-all ${isScrolled ? 'shadow-lg' : ''}`}>
+    <nav className={`fixed w-full backdrop-blur-sm shadow-md z-50 transition-all duration-300 ${isScrolled ? 'bg-primary/95 shadow-lg' : 'bg-white/95'}`}>
       <div className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -36,24 +42,24 @@ const Navbar = () => {
             <img 
               src={process.env.PUBLIC_URL + "/logo_name.png"} 
               alt="NSK Agro Industries" 
-              className="h-24 w-auto"
+              className={`h-24 w-auto transition-all duration-300 ${isScrolled ? 'bg-white rounded' : ''}`}
             />
           </div>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            <button onClick={() => scrollToSection('hero')} className="text-gray-700 hover:text-primary transition">{t.nav.home}</button>
-            <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-primary transition">{t.nav.about}</button>
-            <button onClick={() => scrollToSection('features')} className="text-gray-700 hover:text-primary transition">{t.nav.features}</button>
-            <button onClick={() => scrollToSection('products')} className="text-gray-700 hover:text-primary transition">{t.nav.products}</button>
-            <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-primary transition">{t.nav.contact}</button>
+            <button onClick={() => scrollToSection('hero')} className={`transition ${isScrolled ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-primary'}`}>{t.nav.home}</button>
+            <button onClick={() => scrollToSection('about')} className={`transition ${isScrolled ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-primary'}`}>{t.nav.about}</button>
+            <button onClick={() => scrollToSection('features')} className={`transition ${isScrolled ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-primary'}`}>{t.nav.features}</button>
+            <button onClick={() => scrollToSection('products')} className={`transition ${isScrolled ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-primary'}`}>{t.nav.products}</button>
+            <button onClick={() => scrollToSection('contact')} className={`transition ${isScrolled ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-primary'}`}>{t.nav.contact}</button>
           </div>
           
           {/* Language Toggle & CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={toggleLanguage}
-              className="px-4 py-2 rounded-full border-2 border-primary text-primary font-medium hover:bg-primary hover:text-white transition-all"
+              className={`px-4 py-2 rounded-full border-2 font-medium transition-all ${isScrolled ? 'border-white text-white hover:bg-white hover:text-primary' : 'border-primary text-primary hover:bg-primary hover:text-white'}`}
             >
               {language === 'en' ? 'தமிழ்' : 'English'}
             </button>
@@ -68,7 +74,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-gray-700"
+            className={`md:hidden ${isScrolled ? 'text-white' : 'text-gray-700'}`}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isMenuOpen ? (
@@ -83,14 +89,14 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-3">
-            <button onClick={() => scrollToSection('hero')} className="block text-gray-700 hover:text-primary transition">{t.nav.home}</button>
-            <button onClick={() => scrollToSection('about')} className="block text-gray-700 hover:text-primary transition">{t.nav.about}</button>
-            <button onClick={() => scrollToSection('features')} className="block text-gray-700 hover:text-primary transition">{t.nav.features}</button>
-            <button onClick={() => scrollToSection('products')} className="block text-gray-700 hover:text-primary transition">{t.nav.products}</button>
-            <button onClick={() => scrollToSection('contact')} className="block text-gray-700 hover:text-primary transition">{t.nav.contact}</button>
+            <button onClick={() => scrollToSection('hero')} className={`block transition ${isScrolled ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-primary'}`}>{t.nav.home}</button>
+            <button onClick={() => scrollToSection('about')} className={`block transition ${isScrolled ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-primary'}`}>{t.nav.about}</button>
+            <button onClick={() => scrollToSection('features')} className={`block transition ${isScrolled ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-primary'}`}>{t.nav.features}</button>
+            <button onClick={() => scrollToSection('products')} className={`block transition ${isScrolled ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-primary'}`}>{t.nav.products}</button>
+            <button onClick={() => scrollToSection('contact')} className={`block transition ${isScrolled ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-primary'}`}>{t.nav.contact}</button>
             <button
               onClick={toggleLanguage}
-              className="block w-full text-left px-4 py-2 rounded-lg border-2 border-primary text-primary font-medium hover:bg-primary hover:text-white transition-all"
+              className={`block w-full text-left px-4 py-2 rounded-lg border-2 font-medium transition-all ${isScrolled ? 'border-white text-white hover:bg-white hover:text-primary' : 'border-primary text-primary hover:bg-primary hover:text-white'}`}
             >
               {language === 'en' ? 'தமிழ்' : 'English'}
             </button>
