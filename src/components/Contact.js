@@ -126,7 +126,7 @@ const Contact = () => {
                   <span className="text-2xl mr-4 mt-1">✉️</span>
                   <div>
                     <h4 className="font-semibold mb-1">{t.contact.emailHeading}</h4>
-                    <p className="text-green-100">info@nskagro.com<br/>sales@nskagro.com</p>
+                    <p className="text-green-100">nskagroindustries@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">

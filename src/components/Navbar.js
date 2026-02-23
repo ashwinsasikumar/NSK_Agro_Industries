@@ -29,12 +29,15 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50 transition-all ${isScrolled ? 'shadow-lg' : ''}`}>
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="bg-primary text-white font-bold text-2xl px-3 py-1 rounded">NSK</div>
-            <span className="font-semibold text-gray-800 hidden sm:block">Agro Industries</span>
+            <img 
+              src={process.env.PUBLIC_URL + "/logo_name.png"} 
+              alt="NSK Agro Industries" 
+              className="h-24 w-auto"
+            />
           </div>
           
           {/* Desktop Menu */}

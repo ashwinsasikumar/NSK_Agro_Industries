@@ -19,8 +19,11 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="bg-white text-primary font-bold text-2xl px-3 py-1 rounded">NSK</div>
-              <span className="font-semibold">Agro Industries</span>
+              <img 
+                src={process.env.PUBLIC_URL + "/logo_name.png"} 
+                alt="NSK Agro Industries" 
+                className="h-24 w-auto bg-white rounded"
+              />
             </div>
             <p className="text-green-100 text-sm">
               Leading manufacturer of eco-friendly paper pulp egg trays. Sustainable solutions for a better tomorrow.

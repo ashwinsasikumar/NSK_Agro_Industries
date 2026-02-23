@@ -19,7 +19,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=1920&q=80" 
+          src={process.env.PUBLIC_URL + "/hero_background.png"} 
           alt="Eco-friendly paper pulp egg trays production" 
           className="w-full h-full object-cover"
         />

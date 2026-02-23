@@ -29,24 +29,6 @@ const Products = () => {
   
   const products = [
     {
-      image: process.env.PUBLIC_URL + "/pulping.jpeg",
-      title: t.products.step1Title,
-      description: t.products.step1Desc,
-      badge: t.products.step1Badge
-    },
-    {
-      image: process.env.PUBLIC_URL + "/molding.jpeg",
-      title: t.products.step2Title,
-      description: t.products.step2Desc,
-      badge: t.products.step2Badge
-    },
-    {
-      image: process.env.PUBLIC_URL + "/drying.jpeg",
-      title: t.products.step3Title,
-      description: t.products.step3Desc,
-      badge: t.products.step3Badge
-    },
-    {
       image: "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?auto=format&fit=crop&w=600&q=80",
       title: t.products.step4Title,
       description: t.products.step4Desc,
