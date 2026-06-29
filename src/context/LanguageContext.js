@@ -15,9 +15,9 @@ export const translations = {
     },
     // Hero Section
     hero: {
-      badge: 'Eco-Friendly Packaging Solutions',
-      title: 'NSK Agro Industries',
-      subtitle: 'Premium Eco-Friendly Paper Pulp Egg Trays',
+      badge: '',
+      title: 'NSK AGRO INDUSTRIES',
+      subtitle: 'NOVAPAC delivers innovative, eco-friendly pulp packaging solutions that protect your products and our planet.',
       tagline: 'Sustainable Packaging for a Better Tomorrow',
       tag1: '100% Recycled Paper',
       tag2: 'Biodegradable',
@@ -30,12 +30,33 @@ export const translations = {
     about: {
       heading: 'Who We Are',
       subheading: 'Leading the way in sustainable packaging solutions',
-      title: 'Crafting Sustainability, One Tray at a Time',
-      para1: 'NSK Agro Industries is dedicated to manufacturing high-quality moulded pulp egg trays and other food-grade packaging products, including corrugated boxes, paper bags, paper boards and allied paper-based products. Using advanced pulp molding technology and recycled waste paper, we deliver sustainable, durable packaging solutions to farms, food producers, and distributors across the region.',
-      para2: 'Our commitment to environmental responsibility drives us to create products that not only protect your goods but also protect our planet. With state-of-the-art manufacturing facilities and a dedicated team, we ensure every product meets the highest standards of quality and sustainability. We undertake all activities incidental to manufacturing, from raw material procurement to finished goods delivery.',
-      bullet1: 'Advanced Pulp Molding Technology',
-      bullet2: 'High Production Capacity',
-      bullet3: 'Sustainable & Biodegradable Products',
+      title: 'About NSK Agro Industries',
+      para1: 'NSK AGRO INDUSTRIES is a leading manufacturer of sustainable paper-based packaging solutions under its flagship brand, NOVAPAC.',
+      para2: 'We specialize in high-quality moulded pulp products, including egg trays, industrial protective packaging, electronic packaging, and custom pulp-moulded solutions designed to meet the evolving needs of various industries.',
+      para3: 'Using advanced pulp moulding technology and recycled paper resources, we create durable, cost-effective, and eco-friendly packaging solutions that serve the agriculture, food processing, electronics, manufacturing, and logistics sectors.',
+      para4: 'With modern manufacturing facilities, a skilled workforce, and a strong commitment to sustainability, we ensure every NOVAPAC product meets the highest standards of quality, reliability, and environmental responsibility.',
+      visionTitle: 'Our Vision',
+      visionDesc: 'To become a trusted leader in sustainable packaging solutions by delivering innovative, environmentally responsible products that support businesses while contributing to a greener future.',
+      missionTitle: 'Our Mission',
+      missionDesc: 'To manufacture high-quality moulded pulp packaging products through advanced technology, sustainable practices, and continuous innovation, while ensuring customer satisfaction, operational excellence, and environmental stewardship.',
+      whyTitle: 'Why NOVAPAC?',
+      whyBullets: [
+        'Sustainable and eco-friendly packaging solutions',
+        'Manufactured using recycled paper resources',
+        'Durable, lightweight, and cost-effective products',
+        'Custom packaging solutions for diverse industries',
+        'Consistent quality and reliable supply'
+      ],
+      tagline: 'NOVAPAC — Sustainable Packaging That Protects Products, Businesses, and the Planet.',
+      industriesTitle: 'Industries We Serve',
+      industriesBullets: [
+        'Poultry',
+        'Agriculture',
+        'Food Processing',
+        'Electronics',
+        'Textiles',
+        'Logistics & Transportation'
+      ],
       stat1: 'Trays/Day',
       stat2: 'Recycled Paper',
       stat3: 'Eco-Friendly'
@@ -43,7 +64,7 @@ export const translations = {
     // Features Section
     features: {
       heading: 'Why Choose Us',
-      subheading: 'Discover what makes NSK Agro Industries the preferred choice for sustainable egg packaging',
+      subheading: 'Discover what makes NSK AGRO INDUSTRIES the preferred choice for sustainable egg packaging',
       feature1Title: 'Eco-Friendly & Sustainable',
       feature1Desc: '100% biodegradable and compostable trays made from recycled paper. Reduce your carbon footprint with every purchase.',
       feature2Title: 'Superior Quality & Durability',
@@ -55,32 +76,52 @@ export const translations = {
     },
     // Products Section
     products: {
-      heading: 'From Waste to Product',
-      subheading: 'Our sustainable manufacturing process: Pulping → Molding → Drying → Packing',
-      step1Title: 'Step 1: Pulping',
-      step1Desc: 'Waste paper (newspapers, cartons) is broken down into pulp using water and mechanical action, creating the base material.',
-      step1Badge: 'Raw Material Processing',
-      step2Title: 'Step 2: Molding',
-      step2Desc: 'The pulp is precisely formed into 30-cell egg tray shapes using specialized molding machines with custom dies.',
-      step2Badge: 'Shaping Process',
-      step3Title: 'Step 3: Drying',
-      step3Desc: 'Molded trays undergo efficient thermal drying to achieve optimal strength, durability and moisture resistance.',
-      step3Badge: 'Strengthening',
-      step4Title: 'Packing',
-      step4Desc: 'Quality-checked trays are carefully stacked, packaged, and prepared for delivery to your location.',
-      step4Badge: 'Final Stage',
-      step5Title: 'Our Final Product',
-      step5Desc: 'Premium 30-cell egg tray ready for use. Made from 100% recycled paper, biodegradable and eco-friendly.',
-      step5Badge: '30-Cell Egg Tray',
-      step6Title: 'Ready to Use',
-      step6Desc: 'Our trays provide superior protection for eggs during storage, transport and retail display. Trusted quality.',
-      step6Badge: 'Quality Assured'
+      heading: 'Our Products',
+      subheading: 'Innovative, eco-friendly, and durable moulded pulp packaging solutions custom-made for various industries.',
+      exploreBtn: 'Explore All Products',
+      items: [
+        {
+          title: 'Electronic Industrial Packaging',
+          desc: 'Custom moulded pulp packaging that provides anti-static, shock-absorbing protection for sensitive electronic components.',
+          badge: 'Electronics'
+        },
+        {
+          title: 'Wine Tray',
+          desc: 'Strong and durable pulp trays designed to hold wine bottles securely, preventing breakage during shipping and transit.',
+          badge: 'Beverages'
+        },
+        {
+          title: 'Egg Carton',
+          desc: 'Sturdy, eco-friendly cartons with secure locking covers to protect eggs and display branding for retail.',
+          badge: 'Retail Poultry'
+        },
+        {
+          title: 'Egg Tray',
+          desc: 'Classic, heavy-duty 30-cell egg trays engineered to absorb shocks and protect eggs during storage and high-volume transit.',
+          badge: 'Poultry Farms'
+        },
+        {
+          title: 'Food Product Packaging',
+          desc: 'Biodegradable and moisture-resistant pulp trays designed for fruits, vegetables, and other food products.',
+          badge: 'Agriculture'
+        },
+        {
+          title: 'Handicraft Packaging',
+          desc: 'Protective and customizable moulded packaging that cushions delicate handicrafts, artifacts, and gifts.',
+          badge: 'Handicrafts'
+        },
+        {
+          title: 'Textile Industry Cones',
+          desc: 'High-strength paper cones designed for yarn winding and textile manufacturing processes.',
+          badge: 'Textiles'
+        }
+      ]
     },
     // Testimonials Section
     testimonials: {
       heading: 'What Our Clients Will Say',
       subheading: 'We are just getting started - Your review could be featured here!',
-      test1: 'NSK Agro Industries has been our trusted supplier for over 3 years. Their egg trays are incredibly durable and eco-friendly. Our customers love the sustainable packaging!',
+      test1: 'NSK AGRO INDUSTRIES has been our trusted supplier for over 3 years. Their egg trays are incredibly durable and eco-friendly. Our customers love the sustainable packaging!',
       test1Name: 'Rajesh Kumar',
       test1Position: 'Owner, Sunrise Poultry Farm',
       test2: 'Excellent quality at competitive prices! The delivery is always on time, and the customer service is outstanding. Highly recommend NSK for bulk orders.',
@@ -93,7 +134,7 @@ export const translations = {
     // Contact Section
     contact: {
       heading: 'Get in Touch',
-      subheading: 'Ready to Partner with NSK Agro Industries?',
+      subheading: 'Ready to Partner with NSK AGRO INDUSTRIES?',
       formTitle: 'Request a Quote',
       labelName: 'Full Name *',
       placeholderName: 'Your name',
@@ -106,7 +147,7 @@ export const translations = {
       btnSubmit: 'Send Message',
       infoTitle: 'Contact Information',
       addressTitle: 'Address',
-      address: 'NSK Agro Industries,\nRamachandra puram,\nNegamam, Pollachi,\nCoimbatore, Tamil Nadu, 642120',
+      address: 'NSK AGRO INDUSTRIES,\nRamachandra puram,\nNegamam, Pollachi,\nCoimbatore, Tamil Nadu, 642120',
       phoneTitle: 'Phone',
       emailTitle: 'Email',
       hoursTitle: 'Business Hours',
@@ -132,7 +173,7 @@ export const translations = {
       connect: 'Connect With Us',
       newsletter: 'Subscribe to our newsletter',
       emailPlaceholder: 'Your email',
-      copyright: 'Copyright © 2026 NSK Agro Industries. All Rights Reserved.',
+      copyright: 'Copyright © 2026 NSK AGRO INDUSTRIES. All Rights Reserved.',
       privacy: 'Privacy Policy',
       terms: 'Terms of Service',
       sitemap: 'Sitemap'
@@ -150,9 +191,9 @@ export const translations = {
     },
     // Hero Section
     hero: {
-      badge: 'சுற்றுச்சூழல் நட்பு பேக்கேஜிங் தீர்வுகள்',
+      badge: '',
       title: 'என்.எஸ்.கே ஆக்ரோ இண்டஸ்ட்ரீஸ்',
-      subtitle: 'உயர்தர சுற்றுச்சூழல் நட்பு காகித கூழ் முட்டை தட்டுகள்',
+      subtitle: 'NOVAPAC delivers innovative, eco-friendly pulp packaging solutions that protect your products and our planet.',
       tagline: 'சிறந்த நாளைக்கு நிலையான பேக்கேஜிங்',
       tag1: '100% மறுசுழற்சி காகிதம்',
       tag2: 'உயிரியல் சிதைவு',
@@ -165,12 +206,33 @@ export const translations = {
     about: {
       heading: 'நாங்கள் யார்',
       subheading: 'நிலையான பேக்கேஜிங் தீர்வுகளில் முன்னணியில்',
-      title: 'நிலைத்தன்மையை வடிவமைத்தல், ஒரு தட்டு ஒரு நேரத்தில்',
-      para1: 'என்.எஸ்.கே ஆக்ரோ இண்டஸ்ட்ரீஸ் உயர்தர வடிவமைக்கப்பட்ட கூழ் முட்டை தட்டுகள் மற்றும் பிற உணவு தர பேக்கேஜிங் தயாரிப்புகளை உற்பத்தி செய்வதில் அர்ப்பணிப்புடன் உள்ளது, இதில் நெளி பெட்டிகள், காகித பைகள், காகித பலகைகள் மற்றும் தொடர்புடைய காகித அடிப்படையிலான தயாரிப்புகள் அடங்கும். மேம்பட்ட கூழ் வடிவமைப்பு தொழில்நுட்பம் மற்றும் மறுசுழற்சி செய்யப்பட்ட கழிவு காகிதத்தைப் பயன்படுத்தி, நாங்கள் பிராந்தியம் முழுவதும் பண்ணைகள், உணவு உற்பத்தியாளர்கள் மற்றும் விநியோகஸ்தர்களுக்கு நிலையான, நீடித்த பேக்கேஜிங் தீர்வுகளை வழங்குகிறோம்.',
-      para2: 'சுற்றுச்சூழல் பொறுப்புக்கான எங்கள் அர்ப்பணிப்பு உங்கள் பொருட்களை மட்டுமல்ல, எங்கள் கிரகத்தையும் பாதுகாக்கும் தயாரிப்புகளை உருவாக்க எங்களை தூண்டுகிறது. அதிநவீன உற்பத்தி வசதிகள் மற்றும் அர்ப்பணிப்புள்ள குழுவுடன், ஒவ்வொரு தயாரிப்பும் தரம் மற்றும் நிலைத்தன்மையின் உயர்ந்த தரங்களை பூர்த்தி செய்வதை உறுதி செய்கிறோம். மூலப்பொருள் கொள்முதல் முதல் முடிக்கப்பட்ட பொருட்கள் விநியோகம் வரை உற்பத்தியுடன் தொடர்புடைய அனைத்து நடவடிக்கைகளையும் நாங்கள் மேற்கொள்கிறோம்.',
-      bullet1: 'மேம்பட்ட கூழ் வடிவமைப்பு தொழில்நுட்பம்',
-      bullet2: 'உயர் உற்பத்தி திறன்',
-      bullet3: 'நிலையான மற்றும் உயிரியல் சிதைவு தயாரிப்புகள்',
+      title: 'என்.எஸ்.கே ஆக்ரோ இண்டஸ்ட்ரீஸ் பற்றி',
+      para1: 'என்.எஸ்.கே ஆக்ரோ இண்டஸ்ட்ரீஸ் தனது முதன்மை பிராண்டான நோவாபாக் (NOVAPAC) இன் கீழ் நிலையான காகித அடிப்படையிலான பேக்கேஜிங் தீர்வுகளை தயாரிப்பதில் முன்னணி நிறுவனமாகும்.',
+      para2: 'முட்டை தட்டுகள், தொழில்துறை பாதுகாப்பு பேக்கேஜிங், எலக்ட்ரானிக் பேக்கேஜிங் மற்றும் பல்வேறு தொழில்களின் வளர்ந்து வரும் தேவைகளைப் பூர்த்தி செய்யும் வகையில் வடிவமைக்கப்பட்ட தனிப்பயன் கூழ்-வடிவமைக்கப்பட்ட தீர்வுகள் உள்ளிட்ட உயர்தர வார்ப்பட கூழ் தயாரிப்புகளில் நாங்கள் நிபுணத்துவம் பெற்றுள்ளோம்.',
+      para3: 'மேம்பட்ட கூழ் வார்ப்பு தொழில்நுட்பம் மற்றும் மறுசுழற்சி செய்யப்பட்ட காகித வளங்களைப் பயன்படுத்தி, விவசாயம், உணவு பதப்படுத்துதல், எலக்ட்ரானிக்ஸ், உற்பத்தி மற்றும் தளவாடத் துறைகளுக்கு சேவை செய்யும் நீடித்த, செலவு குறைந்த மற்றும் சுற்றுச்சூழல் நட்பு பேக்கேஜிங் தீர்வுகளை நாங்கள் உருவாக்குகிறோம்.',
+      para4: 'நவீன உற்பத்தி வசதிகள், திறமையான பணியாளர்கள் மற்றும் நிலைத்தன்மைக்கான வலுவான அர்ப்பணிப்பு ஆகியவற்றுடன், ஒவ்வொரு நோவாபாக் (NOVAPAC) தயாரிப்பும் தரம், நம்பகத்தன்மை மற்றும் சுற்றுச்சூழல் பொறுப்பின் மிக உயர்ந்த தரநிலைகளை அடைவதை நாங்கள் உறுதி செய்கிறோம்.',
+      visionTitle: 'எங்கள் தொலைநோக்கு',
+      visionDesc: 'வணிகங்களை ஆதரிக்கும் அதே வேளையில் பசுமையான எதிர்காலத்திற்கு பங்களிக்கும் புதுமையான, சுற்றுச்சூழல் பொறுப்புள்ள தயாரிப்புகளை வழங்குவதன் மூலம் நிலையான பேக்கேஜிங் தீர்வுகளில் நம்பகமான தலைவராக மாறுவது.',
+      missionTitle: 'எங்கள் இலக்கு',
+      missionDesc: 'வாடிக்கையாளர் திருப்தி, செயல்பாட்டு சிறந்து விளங்குதல் மற்றும் சுற்றுச்சூழல் பாதுகாப்பு ஆகியவற்றை உறுதி செய்யும் அதே வேளையில், மேம்பட்ட தொழில்நுட்பம், நிலையான நடைமுறைகள் மற்றும் தொடர்ச்சியான கண்டுபிடிப்புகள் மூலம் உயர்தர வார்ப்பட கூழ் பேக்கேஜிங் தயாரிப்புகளை தயாரிப்பது.',
+      whyTitle: 'ஏன் நோவாபாக் (NOVAPAC)?',
+      whyBullets: [
+        'நிலையான மற்றும் சுற்றுச்சூழல் நட்பு பேக்கேஜிங் தீர்வுகள்',
+        'மறுசுழற்சி செய்யப்பட்ட காகித வளங்களைப் பயன்படுத்தி தயாரிக்கப்படுகிறது',
+        'நீடித்த, இலகுரக மற்றும் செலவு குறைந்த தயாரிப்புகள்',
+        'பல்வேறு தொழில்களுக்கான தனிப்பயன் பேக்கேஜிங் தீர்வுகள்',
+        'நிலையான தரம் மற்றும் நம்பகமான விநியோகம்'
+      ],
+      tagline: 'நோவாபாக் (NOVAPAC) — தயாரிப்புகள், வணிகங்கள் மற்றும் கிரகத்தைப் பாதுகாக்கும் நிலையான பேக்கேஜிங்.',
+      industriesTitle: 'நாங்கள் சேவை செய்யும் தொழில்கள்',
+      industriesBullets: [
+        'கோழி பண்ணைகள்',
+        'விவசாயம்',
+        'உணவு பதப்படுத்துதல்',
+        'எலக்ட்ரானிக்ஸ்',
+        'ஜவுளி',
+        'தளவாடங்கள் மற்றும் போக்குவரத்து'
+      ],
       stat1: 'தட்டுகள்/நாள்',
       stat2: 'மறுசுழற்சி காகிதம்',
       stat3: 'சுற்றுச்சூழல் நட்பு'
@@ -190,26 +252,46 @@ export const translations = {
     },
     // Products Section
     products: {
-      heading: 'கழிவிலிருந்து தயாரிப்புக்கு',
-      subheading: 'எங்கள் நிலையான உற்பத்தி செயல்முறை: கூழாக்குதல் → வடிவமைத்தல் → உலர்த்துதல் → பேக்கிங்',
-      step1Title: 'படி 1: கூழாக்குதல்',
-      step1Desc: 'கழிவு காகிதம் (செய்தித்தாள்கள், அட்டைப்பெட்டிகள்) தண்ணீர் மற்றும் இயந்திர செயல்பாட்டைப் பயன்படுத்தி கூழாக உடைக்கப்படுகிறது, அடிப்படை பொருளை உருவாக்குகிறது.',
-      step1Badge: 'மூலப்பொருள் செயலாக்கம்',
-      step2Title: 'படி 2: வடிவமைத்தல்',
-      step2Desc: 'தனிப்பயன் டைகளுடன் சிறப்பு வடிவமைப்பு இயந்திரங்களைப் பயன்படுத்தி கூழ் துல்லியமாக 30-செல் முட்டை தட்டு வடிவங்களாக உருவாக்கப்படுகிறது.',
-      step2Badge: 'வடிவமைப்பு செயல்முறை',
-      step3Title: 'படி 3: உலர்த்துதல்',
-      step3Desc: 'வடிவமைக்கப்பட்ட தட்டுகள் உகந்த வலிமை, நீடித்து நிலைத்தல் மற்றும் ஈரப்பதம் எதிர்ப்பு அடைய திறமையான வெப்ப உலர்த்துதல் செயல்முறைக்கு உட்படுகின்றன.',
-      step3Badge: 'வலுப்படுத்துதல்',
-      step4Title: 'பேக்கிங்',
-      step4Desc: 'தர சோதனை செய்யப்பட்ட தட்டுகள் கவனமாக அடுக்கி, பேக்கேஜ் செய்யப்பட்டு, உங்கள் இடத்திற்கு டெலிவரிக்கு தயாராக உள்ளன.',
-      step4Badge: 'இறுதி நிலை',
-      step5Title: 'எங்கள் இறுதி தயாரிப்பு',
-      step5Desc: 'பயன்பாட்டிற்கு தயாராக உள்ள உயர்தர 30-செல் முட்டை தட்டு. 100% மறுசுழற்சி காகிதத்திலிருந்து தயாரிக்கப்பட்டது, உயிரியல் சிதைவு மற்றும் சுற்றுச்சூழல் நட்பு.',
-      step5Badge: '30-செல் முட்டை தட்டு',
-      step6Title: 'பயன்பாட்டிற்கு தயார்',
-      step6Desc: 'எங்கள் தட்டுகள் சேமிப்பு, போக்குவரத்து மற்றும் சில்லறை காட்சிக்கு முட்டைகளுக்கு சிறந்த பாதுகாப்பை வழங்குகின்றன. நம்பகமான தரம்.',
-      step6Badge: 'தர உத்தரவாதம்'
+      heading: 'எங்கள் தயாரிப்புகள்',
+      subheading: 'பல்வேறு தொழில்களுக்காக வடிவமைக்கப்பட்ட புதுமையான, சுற்றுச்சூழல் நட்பு மற்றும் நீடித்த வார்ப்பட கூழ் பேக்கேஜிங் தீர்வுகள்.',
+      exploreBtn: 'அனைத்து தயாரிப்புகளையும் ஆராயுங்கள்',
+      items: [
+        {
+          title: 'எலக்ட்ரானிக் தொழில்துறை பேக்கேஜிங்',
+          desc: 'உணர்திறன் கொண்ட எலக்ட்ரானிக் கூறுகளுக்கு அதிர்ச்சி-உறிஞ்சும் பாதுகாப்பை வழங்கும் தனிப்பயன் பேக்கேஜிங்.',
+          badge: 'எலக்ட்ரானிக்ஸ்'
+        },
+        {
+          title: 'ஒயின் தட்டு',
+          desc: 'ஒயின் பாட்டில்களை பாதுகாப்பாக வைத்திருக்க வடிவமைக்கப்பட்ட வலுவான மற்றும் நீடித்த கூழ் தட்டுகள்.',
+          badge: 'பானங்கள்'
+        },
+        {
+          title: 'முட்டை அட்டைப்பெட்டி',
+          desc: 'முட்டைகளைப் பாதுகாக்கவும் சில்லறை விற்பனைக்கு பிராண்டிங்கைக் காட்டவும் பாதுகாப்பான மூடிகளுடன் கூடிய வலுவான அட்டைப்பெட்டிகள்.',
+          badge: 'சில்லறை விற்பனை'
+        },
+        {
+          title: 'முட்டை தட்டு',
+          desc: 'போக்குவரத்தின் போது முட்டைகளை அதிர்ச்சியிலிருந்து பாதுகாக்கும் உன்னதமான 30-செல் முட்டை தட்டுகள்.',
+          badge: 'கோழி பண்ணைகள்'
+        },
+        {
+          title: 'உணவுப் பொருள் பேக்கேஜிங்',
+          desc: 'பழங்கள், காயறிகள் மற்றும் இதர உணவுப் பொருட்களுக்காக வடிவமைக்கப்பட்ட மக்கும் மற்றும் ஈரப்பதம் எதிர்க்கும் தட்டுகள்.',
+          badge: 'விவசாயம்'
+        },
+        {
+          title: 'கைவினைப்பொருள் பேக்கேஜிங்',
+          desc: 'மென்மையான கைவினைப்பொருட்கள் மற்றும் பரிசுகளைப் பாதுகாக்கும் தனிப்பயனாக்கக்கூடிய வார்ப்பட பேக்கேஜிங்.',
+          badge: 'கைவினைப்பொருட்கள்'
+        },
+        {
+          title: 'ஜவுளித் தொழில்துறை கூம்புகள்',
+          desc: 'நூல் சுருட்டுதல் மற்றும் ஜவுளி உற்பத்தி செயல்முறைகளுக்காக வடிவமைக்கப்பட்ட உயர் வலிமை கொண்ட காகித கூம்புகள்.',
+          badge: 'ஜவுளித் துறை'
+        }
+      ]
     },
     // Testimonials Section
     testimonials: {

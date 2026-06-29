@@ -24,6 +24,16 @@ const Contact = () => {
     });
   };
 
+  const renderBrandText = (text) => {
+    const parts = text.split(/(NSK AGRO INDUSTRIES|NOVAPAC)/g);
+    return parts.map((part, index) => {
+      if (part === 'NSK AGRO INDUSTRIES' || part === 'NOVAPAC') {
+        return <span key={index} className="font-bold">{part}</span>;
+      }
+      return part;
+    });
+  };
+
   return (
     <section id="contact" className="py-20 bg-cream relative overflow-hidden">
       {/* Background Pattern */}
@@ -38,65 +48,65 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">{t.contact.heading}</h2>
           <div className="h-0.5 w-24 mx-auto mb-6 bg-gradient-to-r from-transparent via-light to-transparent"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-xl">
-            {t.contact.subheading}
+            {renderBrandText(t.contact.subheading)}
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-12 max-w-6xl mx-auto md:items-stretch">
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-xl shadow-xl">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-6">{t.contact.quoteHeading}</h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="bg-white p-4 md:p-5 rounded-xl shadow-xl flex flex-col">
+            <h3 className="text-base md:text-lg font-semibold text-gray-800 mb-3 md:mb-4">{t.contact.quoteHeading}</h3>
+            <form onSubmit={handleSubmit} className="space-y-2 md:space-y-3 flex-1 flex flex-col">
               <div>
-                <label className="block text-gray-700 font-medium mb-2">{t.contact.nameLabel}</label>
+                <label className="block text-gray-700 font-medium mb-1 text-xs md:text-xs">{t.contact.nameLabel}</label>
                 <input 
                   type="text" 
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition"
+                  className="w-full px-2 md:px-3 py-1.5 md:py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition text-xs md:text-xs"
                   placeholder="Your name"
                 />
               </div>
               <div>
-                <label className="block text-gray-700 font-medium mb-2">{t.contact.emailLabel}</label>
+                <label className="block text-gray-700 font-medium mb-1 text-xs md:text-xs">{t.contact.emailLabel}</label>
                 <input 
                   type="email" 
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition"
+                  className="w-full px-2 md:px-3 py-1.5 md:py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition text-xs md:text-xs"
                   placeholder="your@email.com"
                 />
               </div>
               <div>
-                <label className="block text-gray-700 font-medium mb-2">{t.contact.phoneLabel}</label>
+                <label className="block text-gray-700 font-medium mb-1 text-xs md:text-xs">{t.contact.phoneLabel}</label>
                 <input 
                   type="tel" 
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition"
+                  className="w-full px-2 md:px-3 py-1.5 md:py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition text-xs md:text-xs"
                   placeholder="+91-XXX-XXX-XXXX"
                 />
               </div>
               <div>
-                <label className="block text-gray-700 font-medium mb-2">{t.contact.messageLabel}</label>
+                <label className="block text-gray-700 font-medium mb-1 text-xs md:text-xs">{t.contact.messageLabel}</label>
                 <textarea 
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  rows="4" 
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition"
+                  rows="2" 
+                  className="w-full px-2 md:px-3 py-1.5 md:py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition text-xs md:text-xs"
                   placeholder="Tell us about your requirements..."
                 ></textarea>
               </div>
               <button 
                 type="submit" 
-                className="w-full bg-gradient-to-r from-light to-accent text-white py-4 rounded-lg font-semibold text-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
+                className="w-full bg-gradient-to-r from-light to-accent text-white py-2 md:py-2 rounded-lg font-semibold text-sm md:text-sm hover:shadow-xl transition-all hover:-translate-y-0.5 mt-auto"
               >
                 ✉️ Send Message
               </button>
@@ -104,49 +114,39 @@ const Contact = () => {
           </div>
           
           {/* Contact Information */}
-          <div>
-            <div className="bg-primary text-white p-8 rounded-xl shadow-xl mb-8">
-              <h3 className="text-2xl font-semibold mb-6">{t.contact.infoHeading}</h3>
-              <div className="space-y-6">
+          <div className="flex flex-col">
+            <div className="bg-primary text-white p-4 md:p-6 rounded-xl shadow-xl flex flex-col h-full">
+              <h3 className="text-base md:text-lg font-semibold mb-3 md:mb-4">{t.contact.infoHeading}</h3>
+              <div className="space-y-3 md:space-y-4 flex-1">
                 <div className="flex items-start">
-                  <span className="text-2xl mr-4 mt-1">📍</span>
+                  <span className="text-xl md:text-xl mr-3 md:mr-3 mt-0.5">📍</span>
                   <div>
-                    <h4 className="font-semibold mb-1">{t.contact.addressTitle}</h4>
-                    <p className="text-green-100" style={{ whiteSpace: 'pre-line' }}>{t.contact.address}</p>
+                    <h4 className="font-semibold mb-0.5 text-sm md:text-base">{t.contact.addressTitle}</h4>
+                    <p className="text-green-100 text-xs sm:text-sm" style={{ whiteSpace: 'pre-line' }}>{renderBrandText(t.contact.address)}</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="text-2xl mr-4 mt-1">📞</span>
+                  <span className="text-xl md:text-xl mr-3 md:mr-3 mt-0.5">📞</span>
                   <div>
-                    <h4 className="font-semibold mb-1">{t.contact.phoneHeading}</h4>
-                    <p className="text-green-100">+91 9788778666<br/>+91 9788778850</p>
+                    <h4 className="font-semibold mb-0.5 text-sm md:text-base">{t.contact.phoneHeading}</h4>
+                    <p className="text-green-100 text-xs sm:text-sm">+91 9788778666<br/>+91 9788778850</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="text-2xl mr-4 mt-1">✉️</span>
+                  <span className="text-xl md:text-xl mr-3 md:mr-3 mt-0.5">✉️</span>
                   <div>
-                    <h4 className="font-semibold mb-1">{t.contact.emailHeading}</h4>
-                    <p className="text-green-100">nskagroindustries@gmail.com</p>
+                    <h4 className="font-semibold mb-0.5 text-sm md:text-base">{t.contact.emailHeading}</h4>
+                    <p className="text-green-100 text-xs sm:text-sm">nskagroindustries@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="text-2xl mr-4 mt-1">🕐</span>
+                  <span className="text-xl md:text-xl mr-3 md:mr-3 mt-0.5">🕐</span>
                   <div>
-                    <h4 className="font-semibold mb-1">{t.contact.hoursHeading}</h4>
-                    <p className="text-green-100">Mon - Sat: 9:00 AM - 6:00 PM<br/>Sunday: Closed</p>
+                    <h4 className="font-semibold mb-0.5 text-sm md:text-base">{t.contact.hoursHeading}</h4>
+                    <p className="text-green-100 text-xs sm:text-sm">Mon - Sat: 9:00 AM - 6:00 PM<br/>Sunday: Closed</p>
                   </div>
                 </div>
               </div>
-            </div>
-            
-            {/* CTA Box */}
-            <div className="bg-light text-white p-8 rounded-xl shadow-xl text-center">
-              <span className="text-5xl mb-4 block">🎁</span>
-              <h3 className="text-2xl font-semibold mb-3">Request a Free Sample</h3>
-              <p className="mb-6">Experience our quality firsthand. Get a free sample pack delivered to your location.</p>
-              <button className="inline-block bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
-                Request Sample Now
-              </button>
             </div>
           </div>
         </div>

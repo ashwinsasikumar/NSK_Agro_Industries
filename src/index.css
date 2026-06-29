@@ -37,4 +37,35 @@
   .animate-fade-in {
     animation: fade-in 1s ease-out;
   }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    /* On larger screens use marquee animation, on small screens stack cards */
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
+    animation: marquee 45s linear infinite;
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+
+  /* Disable marquee on small screens for better UX and performance */
+  @media (max-width: 767px) {
+    .animate-marquee {
+      animation: none;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
 }
