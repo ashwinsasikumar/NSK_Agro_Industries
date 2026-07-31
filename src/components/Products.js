@@ -8,8 +8,9 @@ const ProductCard = ({ image, title, description, badge }) => (
       <div className="overflow-hidden h-48 sm:h-52 md:h-56 relative">
         <img 
           src={image} 
-          alt={title} 
+          alt={`${title} - eco-friendly paper pulp egg tray`} 
           className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
+          loading="lazy"
         />
         {/* Soft shadow overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -34,7 +35,7 @@ const ProductCard = ({ image, title, description, badge }) => (
         <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
           <span className="text-xs sm:text-sm font-semibold text-primary flex items-center gap-1 group-hover:gap-2 transition-all duration-300">
             Learn More 
-            <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </span>
@@ -64,9 +65,10 @@ const Products = () => {
 
   // Double the list to create a seamless infinite scrolling effect
   const doubledProducts = [...productsList, ...productsList];
+  const mobileProducts = productsList;
 
   return (
-    <section id="products" className="py-20 md:py-24 bg-cream overflow-hidden">
+    <section id="products" className="py-20 md:py-24 bg-cream overflow-hidden" aria-label="Products Section">
       <div className="container mx-auto px-4 mb-12">
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4">{t.products.heading}</h2>
@@ -85,7 +87,21 @@ const Products = () => {
         
         {/* Scrolling track */}
         <div className="overflow-hidden">
-          <div className="animate-marquee flex py-4 md:py-6 gap-4 md:gap-0 justify-center md:justify-start px-3 md:px-0">
+          {/* Mobile: show products once */}
+          <div className="flex md:hidden py-4 gap-4 overflow-x-auto px-3">
+            {mobileProducts.map((product, index) => (
+              <ProductCard
+                key={`mobile-${index}`}
+                image={product.image}
+                title={product.title}
+                description={product.desc}
+                badge={product.badge}
+              />
+            ))}
+          </div>
+
+          {/* Tablet/Desktop: infinite marquee */}
+          <div className="hidden md:flex animate-marquee py-4 md:py-6 gap-4 md:gap-0 justify-center md:justify-start px-3 md:px-0">
             {doubledProducts.map((product, index) => (
               <ProductCard
                 key={index}

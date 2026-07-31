@@ -5,7 +5,7 @@ const About = () => {
   const { t } = useLanguage();
   
   return (
-    <section id="about" className="py-16 md:py-20 bg-white">
+    <section id="about" className="py-16 md:py-20 bg-white" aria-label="About Us Section">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-start lg:items-center">
           {/* Image */}
@@ -19,8 +19,9 @@ const About = () => {
             </div>
             <img 
               src={process.env.PUBLIC_URL + "/who_we_are.jpeg"} 
-              alt="Modern egg tray production facility" 
+              alt="NSK Agro Industries modern egg tray production facility with advanced manufacturing equipment" 
               className="rounded-2xl shadow-2xl w-full max-w-2xl mx-auto md:mx-0 object-cover"
+              loading="lazy"
             />
             <div className="mt-8 md:mt-16 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-3 gap-3 md:gap-4 max-w-2xl mx-auto md:mx-0">
               <div className="bg-primary text-white p-4 rounded-xl text-center sm:text-left sm:flex sm:flex-col sm:justify-center min-h-[92px] shadow-sm">

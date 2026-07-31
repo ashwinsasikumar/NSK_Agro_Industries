@@ -32,15 +32,15 @@ const ExploreProductsPage = () => {
   };
 
   return (
-    <div className="overflow-x-hidden min-h-screen bg-cream flex flex-col">
+    <>
       {/* Sticky Clean Header */}
       <header className="fixed w-full h-20 md:h-24 bg-white/95 backdrop-blur-sm shadow-md z-50">
         <div className="container mx-auto h-full px-4 flex items-center justify-between">
           {/* Logo */}
-          <a href="#/" className="flex items-center justify-center max-w-[160px] md:max-w-[280px]">
+          <a href="#/" className="flex items-center justify-center max-w-[160px] md:max-w-[280px]" aria-label="NSK Agro Industries home">
             <img 
               src={process.env.PUBLIC_URL + "/logo_name.png"} 
-              alt="NSK Agro Industries" 
+              alt="NSK Agro Industries - Eco-Friendly Egg Trays" 
               className="h-8 md:h-14 w-auto max-w-full object-contain"
             />
           </a>
@@ -50,6 +50,7 @@ const ExploreProductsPage = () => {
             <a
               href="#/"
               className="text-gray-700 hover:text-primary font-semibold transition text-sm md:text-base flex items-center gap-1"
+              aria-label="Back to home page"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -94,7 +95,8 @@ const ExploreProductsPage = () => {
                   <div className="overflow-hidden h-52 md:h-56 relative">
                     <img 
                       src={images[index % images.length]} 
-                      alt={product.title} 
+                      alt={`${product.title} - NSK Agro Industries eco-friendly paper pulp egg tray`}
+                      loading="lazy" 
                       className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
                     />
                     <span className="absolute top-4 left-4 bg-white/95 backdrop-blur-md text-primary text-xs font-bold tracking-wider uppercase px-3 py-1.5 rounded-full shadow-sm">
@@ -135,7 +137,7 @@ const ExploreProductsPage = () => {
 
       {/* Footer */}
       <Footer />
-    </div>
+    </>
   );
 };
 

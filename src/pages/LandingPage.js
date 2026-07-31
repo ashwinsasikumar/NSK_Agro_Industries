@@ -11,17 +11,21 @@ import ScrollToTop from '../components/ScrollToTop';
 
 const LandingPage = () => {
   return (
-    <div className="overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <About />
-      <Products />
-      <Features />
-      <Testimonials />
-      <Contact />
+    <>
+      <header className="overflow-x-hidden">
+        <Navbar />
+        <Hero />
+      </header>
+      <main className="overflow-x-hidden">
+        <About />
+        <Products />
+        <Features />
+        <Testimonials />
+        <Contact />
+      </main>
       <Footer />
       <ScrollToTop />
-    </div>
+    </>
   );
 };
 

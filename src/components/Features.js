@@ -51,7 +51,7 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="py-16 md:py-20 bg-cream">
+    <section id="features" className="py-16 md:py-20 bg-cream" aria-label="Why Choose Us Section">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4">{t.features.heading}</h2>

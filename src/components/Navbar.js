@@ -34,16 +34,18 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed w-full h-20 lg:h-24 backdrop-blur-sm shadow-md z-[60] transition-all duration-300 ${isScrolled ? 'bg-primary/95 shadow-lg' : 'bg-white/95'}`}>
+    <nav className={`fixed w-full h-20 lg:h-24 backdrop-blur-sm shadow-md z-[60] transition-all duration-300 ${isScrolled ? 'bg-primary/95 shadow-lg' : 'bg-white/95'}`} aria-label="Main navigation">
       <div className="container mx-auto h-full px-4">
         <div className="flex items-center justify-between h-full">
           {/* Logo */}
           <div className={`flex items-center justify-center transition-all duration-300 max-w-xs lg:max-w-[420px] ${isScrolled ? 'bg-white rounded px-3 h-12 lg:h-16' : 'h-full'}`}>
-            <img 
-              src={process.env.PUBLIC_URL + "/logo_name.png"} 
-              alt="NSK Agro Industries" 
-              className="h-16 lg:h-20 xl:h-24 w-auto max-w-full object-contain transition-all duration-300"
-            />
+            <a href="#/" aria-label="NSK Agro Industries home" title="Back to home">
+              <img 
+                src={process.env.PUBLIC_URL + "/logo_name.png"} 
+                alt="NSK Agro Industries - Eco-Friendly Egg Trays" 
+                className="h-16 lg:h-20 xl:h-24 w-auto max-w-full object-contain transition-all duration-300"
+              />
+            </a>
           </div>
           
           {/* Desktop Menu */}

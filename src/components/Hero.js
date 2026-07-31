@@ -26,13 +26,17 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen bg-white overflow-hidden">
+    <section id="hero" className="relative min-h-screen bg-white overflow-hidden" aria-label="Hero Section">
       {/* Mobile-only hero */}
       <div className="md:hidden relative bg-[#f3faf1] px-4 pt-16 pb-4 overflow-hidden">
         <div className="max-w-xl mx-auto text-center">
           <img
             src={process.env.PUBLIC_URL + "/novapacimage.png"}
             alt="NOVAPAC"
+            width="1280"
+            height="853"
+            decoding="async"
+            fetchpriority="high"
             className="w-full max-w-[24rem] sm:max-w-[28rem] h-auto mx-auto -mt-6 mb-3"
           />
 
@@ -70,34 +74,38 @@ const Hero = () => {
             <img
               src={process.env.PUBLIC_URL + "/productsimage.png"}
               alt="NSK Agro Industries products"
+              width="1536"
+              height="796"
+              decoding="async"
+              fetchpriority="high"
               className="w-full h-auto object-cover"
             />
           </div>
 
           <div className="mt-5 grid grid-cols-2 gap-3 text-left">
             <div className="bg-primary rounded-2xl p-3 text-white shadow-sm flex items-center gap-3">
-              <img src={process.env.PUBLIC_URL + "/greenicon1.png"} alt="" className="h-10 w-10 shrink-0" />
+              <img src={process.env.PUBLIC_URL + "/greenicon1.png"} alt="Eco-friendly certification" className="h-10 w-10 shrink-0" loading="lazy" />
               <div className="leading-tight">
                 <div className="text-sm font-semibold">100%</div>
                 <div className="text-xs">Eco friendly</div>
               </div>
             </div>
             <div className="bg-primary rounded-2xl p-3 text-white shadow-sm flex items-center gap-3">
-              <img src={process.env.PUBLIC_URL + "/greenicon2.png"} alt="" className="h-10 w-10 shrink-0" />
+              <img src={process.env.PUBLIC_URL + "/greenicon2.png"} alt="Biodegradable material" className="h-10 w-10 shrink-0" loading="lazy" />
               <div className="leading-tight">
                 <div className="text-sm font-semibold">100%</div>
                 <div className="text-xs">Biodegradable</div>
               </div>
             </div>
             <div className="bg-primary rounded-2xl p-3 text-white shadow-sm flex items-center gap-3">
-              <img src={process.env.PUBLIC_URL + "/greenicon3.png"} alt="" className="h-10 w-10 shrink-0" />
+              <img src={process.env.PUBLIC_URL + "/greenicon3.png"} alt="Advanced manufacturing technology" className="h-10 w-10 shrink-0" loading="lazy" />
               <div className="leading-tight">
                 <div className="text-sm font-semibold">Advanced</div>
                 <div className="text-xs">Manufacturing</div>
               </div>
             </div>
             <div className="bg-primary rounded-2xl p-3 text-white shadow-sm flex items-center gap-3">
-              <img src={process.env.PUBLIC_URL + "/greenicon5.png"} alt="" className="h-10 w-10 shrink-0" />
+              <img src={process.env.PUBLIC_URL + "/greenicon5.png"} alt="Global distribution" className="h-10 w-10 shrink-0" loading="lazy" />
               <div className="leading-tight">
                 <div className="text-sm font-semibold">Serving</div>
                 <div className="text-xs">Pan INDIA & Global</div>
@@ -126,6 +134,10 @@ const Hero = () => {
               <img
                 src={process.env.PUBLIC_URL + "/novapacimage.png"}
                 alt="NOVAPAC"
+                width="1280"
+                height="853"
+                decoding="async"
+                fetchpriority="high"
                 className="w-full max-w-xs md:max-w-sm lg:max-w-md xl:max-w-[38rem] h-auto mt-6 md:mt-8 mb-2 md:-ml-8"
               />
               <div className="flex flex-col gap-6 max-w-xl">
@@ -141,6 +153,10 @@ const Hero = () => {
               <img
                 src={process.env.PUBLIC_URL + "/productsimage.png"}
                 alt="NSK Agro Industries products"
+                width="1536"
+                height="796"
+                decoding="async"
+                fetchpriority="high"
                 className="relative w-full h-full object-cover"
               />
               <div className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-[#f3faf1] to-transparent"></div>
@@ -151,35 +167,35 @@ const Hero = () => {
         <div className="relative -top-2 lg:-top-6 w-full bg-primary py-4 lg:py-2">
           <div className="container mx-auto px-4 grid grid-cols-2 md:grid-cols-3 lg:flex lg:flex-row items-center justify-center gap-y-4 gap-x-6 lg:gap-0 lg:divide-x-2 lg:divide-[#9ccc85]">
             <div className="flex items-center gap-3 lg:gap-4 px-3 md:px-6 lg:px-8 xl:px-10 justify-start md:justify-center lg:justify-start">
-              <img src={process.env.PUBLIC_URL + "/greenicon1.png"} alt="" className="h-10 w-10 lg:h-12 lg:w-12 shrink-0" />
+              <img src={process.env.PUBLIC_URL + "/greenicon1.png"} alt="Eco-friendly certification" className="h-10 w-10 lg:h-12 lg:w-12 shrink-0" loading="lazy" />
               <div className="text-left leading-tight text-white">
                 <div className="text-sm lg:text-base font-semibold">100%</div>
                 <div className="text-xs lg:text-sm">Eco friendly</div>
               </div>
             </div>
             <div className="flex items-center gap-3 lg:gap-4 px-3 md:px-6 lg:px-8 xl:px-10 justify-start md:justify-center lg:justify-start">
-              <img src={process.env.PUBLIC_URL + "/greenicon2.png"} alt="" className="h-10 w-10 lg:h-12 lg:w-12 shrink-0" />
+              <img src={process.env.PUBLIC_URL + "/greenicon2.png"} alt="Biodegradable material" className="h-10 w-10 lg:h-12 lg:w-12 shrink-0" loading="lazy" />
               <div className="text-left leading-tight text-white">
                 <div className="text-sm lg:text-base font-semibold">100%</div>
                 <div className="text-xs lg:text-sm">Biodegradable</div>
               </div>
             </div>
             <div className="flex items-center gap-3 lg:gap-4 px-3 md:px-6 lg:px-8 xl:px-10 justify-start md:justify-center lg:justify-start">
-              <img src={process.env.PUBLIC_URL + "/greenicon3.png"} alt="" className="h-10 w-10 lg:h-12 lg:w-12 shrink-0" />
+              <img src={process.env.PUBLIC_URL + "/greenicon3.png"} alt="Advanced manufacturing technology" className="h-10 w-10 lg:h-12 lg:w-12 shrink-0" loading="lazy" />
               <div className="text-left leading-tight text-white">
                 <div className="text-sm lg:text-base font-semibold">Advanced</div>
                 <div className="text-xs lg:text-sm">Manufacturing</div>
               </div>
             </div>
             <div className="flex items-center gap-3 lg:gap-4 px-3 md:px-6 lg:px-8 xl:px-10 justify-start md:justify-center lg:justify-start">
-              <img src={process.env.PUBLIC_URL + "/greenicon4.png"} alt="" className="h-10 w-10 lg:h-12 lg:w-12 shrink-0" />
+              <img src={process.env.PUBLIC_URL + "/greenicon4.png"} alt="Trusted partnerships" className="h-10 w-10 lg:h-12 lg:w-12 shrink-0" loading="lazy" />
               <div className="text-left leading-tight text-white">
                 <div className="text-sm lg:text-base font-semibold">100%</div>
                 <div className="text-xs lg:text-sm">Trusted Partnerships</div>
               </div>
             </div>
             <div className="flex items-center gap-3 lg:gap-4 px-3 md:px-6 lg:px-8 xl:px-10 justify-center md:justify-center lg:justify-start col-span-2 md:col-span-1 md:col-start-2 lg:col-span-1 lg:col-start-auto">
-              <img src={process.env.PUBLIC_URL + "/greenicon5.png"} alt="" className="h-10 w-10 lg:h-12 lg:w-12 shrink-0" />
+              <img src={process.env.PUBLIC_URL + "/greenicon5.png"} alt="Global distribution" className="h-10 w-10 lg:h-12 lg:w-12 shrink-0" loading="lazy" />
               <div className="text-left leading-tight text-white">
                 <div className="text-sm lg:text-base font-semibold">Serving</div>
                 <div className="text-xs lg:text-sm">Pan INDIA & Global</div>
@@ -192,8 +208,12 @@ const Hero = () => {
           <div className="flex flex-col lg:flex-row lg:items-start gap-6 xl:gap-10">
             <img
               src={process.env.PUBLIC_URL + "/factory_image.png"}
-              alt="NSK Agro Industries factory"
+              alt="NSK Agro Industries eco-friendly manufacturing facility with advanced equipment"
+              width="1701"
+              height="924"
+              decoding="async"
               className="w-full max-w-[320px] md:max-w-[360px] mx-auto lg:mx-0 lg:w-[22rem] xl:w-[26rem] h-auto rounded-lg object-cover lg:-mt-6 lg:-ml-9"
+              loading="lazy"
             />
             <div className="flex flex-col gap-4 flex-1 xl:flex-row xl:justify-between">
               <div className="flex-1 max-w-full xl:max-w-[650px] text-left md:pt-2 lg:-mt-4">

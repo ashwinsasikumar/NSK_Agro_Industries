@@ -13,7 +13,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-primary text-white py-12">
+    <footer className="bg-primary text-white py-12" role="contentinfo">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
@@ -23,6 +23,7 @@ const Footer = () => {
                 src={process.env.PUBLIC_URL + "/logo_name.png"} 
                 alt="NSK Agro Industries" 
                 className="h-12 lg:h-24 w-auto bg-white rounded"
+                loading="lazy"
               />
             </div>
             <p className="text-green-100 text-sm">
