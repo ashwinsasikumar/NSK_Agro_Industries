@@ -3,7 +3,7 @@ import LandingPage from '../pages/LandingPage';
 import ExploreProductsPage from '../pages/ExploreProductsPage';
 import { LanguageProvider } from '../context/LanguageContext';
 
-const SITE_URL = 'https://nskagroindustries.com';
+const SITE_URL = 'https://nskagro.in';
 
 const HOME_SEO = {
   title: 'NSK Agro Industries - Eco-Friendly Egg Trays',
