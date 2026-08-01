@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
 const ProductCard = ({ image, title, description, badge }) => (
-  <div className="w-full sm:w-80 md:w-[350px] flex-shrink-0 px-3 sm:px-4">
+  <div className="w-72 sm:w-80 md:w-[350px] flex-shrink-0 px-3 sm:px-4">
     <div className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:-translate-y-4 hover:scale-[1.03] hover:shadow-2xl transition-all duration-500 ease-out group relative h-full flex flex-col">
       {/* Image Container with Zoom effect */}
       <div className="overflow-hidden h-48 sm:h-52 md:h-56 relative">
@@ -67,6 +67,14 @@ const Products = () => {
   const doubledProducts = [...productsList, ...productsList];
   const mobileProducts = productsList;
 
+  const [isDesktop, setIsDesktop] = useState(typeof window !== 'undefined' ? window.innerWidth >= 768 : true);
+
+  useEffect(() => {
+    const onResize = () => setIsDesktop(window.innerWidth >= 768);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
+
   return (
     <section id="products" className="py-20 md:py-24 bg-cream overflow-hidden" aria-label="Products Section">
       <div className="container mx-auto px-4 mb-12">
@@ -88,30 +96,34 @@ const Products = () => {
         {/* Scrolling track */}
         <div className="overflow-hidden">
           {/* Mobile: show products once */}
-          <div className="flex md:hidden py-4 gap-4 overflow-x-auto px-3">
-            {mobileProducts.map((product, index) => (
-              <ProductCard
-                key={`mobile-${index}`}
-                image={product.image}
-                title={product.title}
-                description={product.desc}
-                badge={product.badge}
-              />
-            ))}
-          </div>
+          {!isDesktop && (
+            <div className="flex md:hidden py-4 gap-4 overflow-x-auto px-3">
+              {mobileProducts.map((product, index) => (
+                <ProductCard
+                  key={`mobile-${index}`}
+                  image={product.image}
+                  title={product.title}
+                  description={product.desc}
+                  badge={product.badge}
+                />
+              ))}
+            </div>
+          )}
 
           {/* Tablet/Desktop: infinite marquee */}
-          <div className="hidden md:flex animate-marquee py-4 md:py-6 gap-4 md:gap-0 justify-center md:justify-start px-3 md:px-0">
-            {doubledProducts.map((product, index) => (
-              <ProductCard
-                key={index}
-                image={product.image}
-                title={product.title}
-                description={product.desc}
-                badge={product.badge}
-              />
-            ))}
-          </div>
+          {isDesktop && (
+            <div className="hidden md:flex animate-marquee py-4 md:py-6 gap-4 md:gap-0 justify-center md:justify-start px-3 md:px-0">
+              {doubledProducts.map((product, index) => (
+                <ProductCard
+                  key={index}
+                  image={product.image}
+                  title={product.title}
+                  description={product.desc}
+                  badge={product.badge}
+                />
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
