@@ -133,10 +133,27 @@ function App() {
   const seo = currentHash === '#/explore-products' ? EXPLORE_SEO : HOME_SEO;
 
   useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      const previousScrollRestoration = window.history.scrollRestoration;
+      window.history.scrollRestoration = 'manual';
+
+      return () => {
+        window.history.scrollRestoration = previousScrollRestoration;
+      };
+    }
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'instant'
+    });
+  }, [currentHash]);
+
+  useEffect(() => {
     const handleHashChange = () => {
       setCurrentHash(window.location.hash);
-      // Scroll to top on page change
-      window.scrollTo(0, 0);
     };
 
     window.addEventListener('hashchange', handleHashChange);

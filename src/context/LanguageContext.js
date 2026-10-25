@@ -21,10 +21,17 @@ export const translations = {
       tagline: 'Sustainable Packaging for a Better Tomorrow',
       tag1: '100% Recycled Paper',
       tag2: 'Biodegradable',
-      tag3: 'Strong & Reliable',
-      tag4: 'Perfect for Farms & Retail',
+      tag3: 'Advanced Manufacturing',
+      tag4: 'Trusted Partnerships',
+      tag5: 'Serving',
+      tag6: 'Pan INDIA & Global',
       cta1: 'Get a Quote',
-      cta2: 'Learn More'
+      cta2: 'Learn More',
+      exploreProducts: 'Explore Products',
+      aboutUs: 'About Us',
+      aboutLabel: 'ABOUT NSK AGRO INDUSTRIES',
+      aboutTitle: 'Leaders in Eco Pulp Packaging Solutions',
+      aboutText: 'At NSK AGRO INDUSTRIES, we are committed to providing high-quality, sustainable pulp packaging solutions that meet the needs of businesses while protecting the environment. With advanced technology and a customer-first approach, we deliver excellence in every product we create.'
     },
     // About Section
     about: {
@@ -79,6 +86,9 @@ export const translations = {
       heading: 'Our Products',
       subheading: 'Innovative, eco-friendly, and durable moulded pulp packaging solutions custom-made for various industries.',
       exploreBtn: 'Explore All Products',
+      pageTitle: 'Our Product Range',
+      inquiryBtn: 'Inquire / Get Quote',
+      backHome: 'Back to Home',
       items: [
         {
           title: 'Electronic Industrial Packaging',
@@ -97,7 +107,7 @@ export const translations = {
         },
         {
           title: 'Egg Tray',
-          desc: 'Classic, heavy-duty 30-cell egg trays engineered to absorb shocks and protect eggs during storage and high-volume transit.',
+          desc: 'Classic, heavy-duty [6,12,15,20,30] - Cell Egg Trays engineered to absorb shocks and protect eggs during storage and high-volume transit.',
           badge: 'Poultry Farms'
         },
         {
@@ -121,6 +131,15 @@ export const translations = {
     testimonials: {
       heading: 'What Our Clients Will Say',
       subheading: 'We are just getting started - Your review could be featured here!',
+      shareHeading: 'Share Your Experience',
+      nameLabel: 'Your Name *',
+      namePlaceholder: 'Enter your name',
+      positionLabel: 'Position/Company',
+      positionPlaceholder: 'e.g., Owner, ABC Farm',
+      ratingLabel: 'Rating *',
+      reviewLabel: 'Your Review *',
+      reviewPlaceholder: 'Tell us about your experience with NSK AGRO INDUSTRIES...',
+      submitBtn: 'Submit Review',
       test1: 'NSK AGRO INDUSTRIES has been our trusted supplier for over 3 years. Their egg trays are incredibly durable and eco-friendly. Our customers love the sustainable packaging!',
       test1Name: 'Rajesh Kumar',
       test1Position: 'Owner, Sunrise Poultry Farm',
@@ -136,6 +155,8 @@ export const translations = {
       heading: 'Get in Touch',
       subheading: 'Ready to Partner with NSK AGRO INDUSTRIES?',
       formTitle: 'Request a Quote',
+      quoteHeading: 'Quick Message',
+      infoHeading: 'Contact Information',
       labelName: 'Full Name *',
       placeholderName: 'Your name',
       labelEmail: 'Email Address *',
@@ -145,13 +166,18 @@ export const translations = {
       labelMessage: 'Message / Requirements',
       placeholderMessage: 'Tell us about your requirements...',
       btnSubmit: 'Send Message',
-      infoTitle: 'Contact Information',
       addressTitle: 'Address',
       address: 'NSK AGRO INDUSTRIES,\nRamachandra puram,\nNegamam, Pollachi,\nCoimbatore, Tamil Nadu, 642120',
       phoneTitle: 'Phone',
+      phoneHeading: 'Phone',
       emailTitle: 'Email',
+      emailHeading: 'Email',
       hoursTitle: 'Business Hours',
+      hoursHeading: 'Business Hours',
       hours: 'Mon - Sat: 9:00 AM - 6:00 PM\nSunday: Closed',
+      quickMessage: 'Send us a quick message on WhatsApp and our team will get back to you shortly.',
+      whatsapp: 'WhatsApp Us',
+      instagram: 'Instagram',
       sampleTitle: 'Request a Free Sample',
       sampleDesc: 'Experience our quality firsthand. Get a free sample pack delivered to your location.',
       sampleBtn: 'Request Sample Now',
@@ -166,10 +192,10 @@ export const translations = {
       products: 'Products',
       contact: 'Contact',
       ourProduct: 'Our Product',
-      product1: '30-Cell Egg Trays',
-      product2: 'Eco-Friendly Material',
-      product3: 'Bulk Orders',
-      product4: 'Custom Branding',
+      product1: '(6,12,15,20,30)-Cell Egg Trays',
+      product2: 'Industrial Protective Packaging',
+      product3: 'Food Grade Pulp Packaging',
+      product4: 'Egg Carton & Egg Boxes',
       connect: 'Connect With Us',
       newsletter: 'Subscribe to our newsletter',
       emailPlaceholder: 'Your email',
@@ -197,10 +223,17 @@ export const translations = {
       tagline: 'சிறந்த நாளைக்கு நிலையான பேக்கேஜிங்',
       tag1: '100% மறுசுழற்சி காகிதம்',
       tag2: 'உயிரியல் சிதைவு',
-      tag3: 'வலிமையான மற்றும் நம்பகமான',
-      tag4: 'பண்ணைகள் மற்றும் சில்லறை விற்பனைக்கு ஏற்றது',
+      tag3: 'மேம்பட்ட உற்பத்தி',
+      tag4: 'நம்பகமான கூட்டுறவுகள்',
+      tag5: 'சேவை செய்கிறது',
+      tag6: 'பான் இந்தியா & உலகம்',
       cta1: 'விலை கேளுங்கள்',
-      cta2: 'மேலும் அறிக'
+      cta2: 'மேலும் அறிக',
+      exploreProducts: 'தயாரிப்புகளை ஆராயுங்கள்',
+      aboutUs: 'எங்களைப் பற்றி',
+      aboutLabel: 'என்.எஸ்.கே ஆக்ரோ இண்டஸ்ட்ரீஸைப் பற்றி',
+      aboutTitle: 'சுற்றுச்சூழல் கூழ் பேக்கேஜிங் தீர்வுகளில் முன்னணி',
+      aboutText: 'என்.எஸ்.கே ஆக்ரோ இண்டஸ்ட்ரீஸில், வணிகங்களின் தேவைகளைப் பூர்த்தி செய்யும் அதே வேளையில் சுற்றுச்சூழலை பாதுகாக்கும் உயர் தரமான, நிலையான கூழ் பேக்கேஜிங் தீர்வுகளை வழங்க நாங்கள் உறுதிபூண்டுள்ளோம். மேம்பட்ட தொழில்நுட்பம் மற்றும் வாடிக்கையாளர் முதல் அணுகுமுறை மூலம், நாங்கள் ஒவ்வொரு தயாரிப்பிலும் சிறப்பை வழங்குகிறோம்.'
     },
     // About Section
     about: {
@@ -255,6 +288,9 @@ export const translations = {
       heading: 'எங்கள் தயாரிப்புகள்',
       subheading: 'பல்வேறு தொழில்களுக்காக வடிவமைக்கப்பட்ட புதுமையான, சுற்றுச்சூழல் நட்பு மற்றும் நீடித்த வார்ப்பட கூழ் பேக்கேஜிங் தீர்வுகள்.',
       exploreBtn: 'அனைத்து தயாரிப்புகளையும் ஆராயுங்கள்',
+      pageTitle: 'எங்கள் தயாரிப்பு வரம்பு',
+      inquiryBtn: 'விசாரணை / விலை கேள்க',
+      backHome: 'முகப்புக்குச் செல்லவும்',
       items: [
         {
           title: 'எலக்ட்ரானிக் தொழில்துறை பேக்கேஜிங்',
@@ -272,24 +308,24 @@ export const translations = {
           badge: 'சில்லறை விற்பனை'
         },
         {
-          title: 'முட்டை தட்டு',
-          desc: 'போக்குவரத்தின் போது முட்டைகளை அதிர்ச்சியிலிருந்து பாதுகாக்கும் உன்னதமான 30-செல் முட்டை தட்டுகள்.',
-          badge: 'கோழி பண்ணைகள்'
+          title: '[6,12,15,20,30] - செல்கள் முட்டை தட்டு',
+          desc: 'குறைந்த அதிர்ச்சி மற்றும் அதிக அளவு போக்குவரத்தின் போது முட்டைகளை பாதுகாக்க வடிவமைக்கப்பட்ட வலுவான [6,12,15,20,30] - செல் முட்டை தட்டுகள்.',
+          badge: 'கோழிப்பண்ணைகள்'
         },
         {
-          title: 'உணவுப் பொருள் பேக்கேஜிங்',
-          desc: 'பழங்கள், காயறிகள் மற்றும் இதர உணவுப் பொருட்களுக்காக வடிவமைக்கப்பட்ட மக்கும் மற்றும் ஈரப்பதம் எதிர்க்கும் தட்டுகள்.',
+          title: 'உணவு தயாரிப்பு பேக்கேஜிங்',
+          desc: 'பழங்கள், காய்கறிகள் மற்றும் பிற உணவுப் பொருட்களுக்கு ஏற்ற வகையில் வடிவமைக்கப்பட்ட உயிரியல் சிதைவு மற்றும் ஈரப்பதம்-எதிர்ப்பு கூழ் தட்டுகள்.',
           badge: 'விவசாயம்'
         },
         {
-          title: 'கைவினைப்பொருள் பேக்கேஜிங்',
-          desc: 'மென்மையான கைவினைப்பொருட்கள் மற்றும் பரிசுகளைப் பாதுகாக்கும் தனிப்பயனாக்கக்கூடிய வார்ப்பட பேக்கேஜிங்.',
-          badge: 'கைவினைப்பொருட்கள்'
+          title: 'கைத்தொழில் பேக்கேஜிங்',
+          desc: 'மென்மையான கைத்தொழில் பொருட்கள், கலைப்பொருட்கள் மற்றும் பரிசுகளுக்கு பாதுகாப்பான தனிப்பயன் வார்ப்பட பேக்கேஜிங்.',
+          badge: 'கைத்தொழில் பொருட்கள்'
         },
         {
-          title: 'ஜவுளித் தொழில்துறை கூம்புகள்',
-          desc: 'நூல் சுருட்டுதல் மற்றும் ஜவுளி உற்பத்தி செயல்முறைகளுக்காக வடிவமைக்கப்பட்ட உயர் வலிமை கொண்ட காகித கூம்புகள்.',
-          badge: 'ஜவுளித் துறை'
+          title: 'ஜவுளித் தொழில் கூம்புகள்',
+          desc: 'நூல் சுழற்றுதல் மற்றும் ஜவுளி உற்பத்தி செயல்முறைகளுக்கு வடிவமைக்கப்பட்ட அதிக வலிமையான காகித கூம்புகள்.',
+          badge: 'ஜவுளி'
         }
       ]
     },
@@ -297,6 +333,15 @@ export const translations = {
     testimonials: {
       heading: 'எங்கள் வாடிக்கையாளர்கள் என்ன சொல்வார்கள்',
       subheading: 'நாங்கள் இப்போதுதான் தொடங்குகிறோம் - உங்கள் விமர்சனம் இங்கே இடம்பெறலாம்!',
+      shareHeading: 'உங்கள் அனுபவத்தைப் பகிருங்கள்',
+      nameLabel: 'உங்கள் பெயர் *',
+      namePlaceholder: 'உங்கள் பெயரை உள்ளிடவும்',
+      positionLabel: 'பதவி / நிறுவனம்',
+      positionPlaceholder: 'எ.கா., உரிமையாளர், ABC பண்ணை',
+      ratingLabel: 'மதிப்பீடு *',
+      reviewLabel: 'உங்கள் விமர்சனம் *',
+      reviewPlaceholder: 'என்.எஸ்.கே ஆக்ரோ இண்டஸ்ட்ரீஸுடன் உங்கள் அனுபவத்தைப் பற்றி எங்களிடம் கூறுங்கள்...',
+      submitBtn: 'விமர்சனத்தை சமர்ப்பிக்கவும்',
       test1: 'என்.எஸ்.கே ஆக்ரோ இண்டஸ்ட்ரீஸ் 3 ஆண்டுகளுக்கும் மேலாக எங்கள் நம்பகமான சப்ளையர். அவர்களின் முட்டை தட்டுகள் நம்பமுடியாத அளவிற்கு நீடித்து மற்றும் சுற்றுச்சூழல் நட்பு. எங்கள் வாடிக்கையாளர்கள் நிலையான பேக்கேஜிங்கை விரும்புகிறார்கள்!',
       test1Name: 'ராஜேஷ் குமார்',
       test1Position: 'உரிமையாளர், சன்ரைஸ் கோழி பண்ணை',
@@ -312,6 +357,8 @@ export const translations = {
       heading: 'தொடர்பு கொள்ளுங்கள்',
       subheading: 'என்.எஸ்.கே ஆக்ரோ இண்டஸ்ட்ரீஸுடன் கூட்டாளியாக தயாரா?',
       formTitle: 'விலை கோரிக்கை',
+      quoteHeading: 'விரைவு செய்தி',
+      infoHeading: 'தொடர்பு தகவல்',
       labelName: 'முழு பெயர் *',
       placeholderName: 'உங்கள் பெயர்',
       labelEmail: 'மின்னஞ்சல் முகவரி *',
@@ -321,13 +368,18 @@ export const translations = {
       labelMessage: 'செய்தி / தேவைகள்',
       placeholderMessage: 'உங்கள் தேவைகளைப் பற்றி எங்களிடம் கூறுங்கள்...',
       btnSubmit: 'செய்தி அனுப்பு',
-      infoTitle: 'தொடர்பு தகவல்',
       addressTitle: 'முகவரி',
       address: 'என்.எஸ்.கே ஆக்ரோ இண்டஸ்ட்ரீஸ்,\nராமச்சந்திர புரம்,\nநெகமம், பொள்ளாச்சி,\nகோயம்புத்தூர், தமிழ்நாடு, 642120',
       phoneTitle: 'தொலைபேசி',
+      phoneHeading: 'தொலைபேசி',
       emailTitle: 'மின்னஞ்சல்',
+      emailHeading: 'மின்னஞ்சல்',
       hoursTitle: 'வணிக நேரம்',
+      hoursHeading: 'வணிக நேரம்',
       hours: 'திங்கள் - சனி: காலை 9:00 - மாலை 6:00\nஞாயிறு: மூடப்பட்டது',
+      quickMessage: 'வாட்ஸ்அப்பில் எங்களுக்கு விரைவாகச் செய்திகள் அனுப்புங்கள்; எங்கள் குழு விரைவில் உங்களுக்குத் திரும்பி தொடர்பு கொள்ளும்.',
+      whatsapp: 'வாட்ஸ்அப் மூலம் அனுப்பு',
+      instagram: 'இன்ஸ்டாகிராம்',
       sampleTitle: 'இலவச மாதிரியை கோருங்கள்',
       sampleDesc: 'எங்கள் தரத்தை நேரடியாக அனுபவிக்கவும். உங்கள் இடத்திற்கு இலவச மாதிரி பேக்கை பெறுங்கள்.',
       sampleBtn: 'இப்போது மாதிரியை கோருங்கள்',
@@ -342,11 +394,11 @@ export const translations = {
       products: 'தயாரிப்புகள்',
       contact: 'தொடர்பு',
       ourProduct: 'எங்கள் தயாரிப்பு',
-      product1: '30-செல் முட்டை தட்டுகள்',
-      product2: 'சுற்றுச்சூழல் நட்பு பொருள்',
-      product3: 'மொத்த ஆர்டர்கள்',
-      product4: 'தனிப்பயன் பிராண்டிங்',
-      connect: 'எங்களுடன் இணையுங்கள்',
+      product1: '[6,12,15,20,30]-செல் முட்டை தட்டுகள்',
+      product2: 'தொழில்துறை பாதுகாப்பு பேக்கேஜிங்',
+      product3: 'உணவு தர கூழ் பேக்கேஜிங்',
+      product4: 'முட்டை அட்டைப்பெட்டி & முட்டை பெட்டிகள்',
+      connect: 'எங்களுடன் இணைந்து கொள்ளுங்கள்',
       newsletter: 'எங்கள் செய்திமடலுக்கு குழுசேரவும்',
       emailPlaceholder: 'உங்கள் மின்னஞ்சல்',
       copyright: 'பதிப்புரிமை © 2026 என்.எஸ்.கே ஆக்ரோ இண்டஸ்ட்ரீஸ். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.',

@@ -1,28 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
 const Contact = () => {
   const { t } = useLanguage();
-  
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Thank you for your inquiry! We will get back to you within 24 hours.');
-    setFormData({ name: '', email: '', phone: '', message: '' });
-  };
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   const renderBrandText = (text) => {
     const parts = text.split(/(NSK AGRO INDUSTRIES|NOVAPAC)/g);
@@ -53,64 +33,32 @@ const Contact = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-6 lg:gap-12 max-w-6xl mx-auto md:items-stretch">
-          {/* Contact Form */}
-          <div className="bg-white p-4 md:p-5 rounded-xl shadow-xl flex flex-col">
+          {/* Contact Action */}
+          <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-primary/10 flex flex-col justify-center">
             <h3 className="text-base md:text-lg font-semibold text-gray-800 mb-3 md:mb-4">{t.contact.quoteHeading}</h3>
-            <form onSubmit={handleSubmit} className="space-y-2 md:space-y-3 flex-1 flex flex-col">
-              <div>
-                <label className="block text-gray-700 font-medium mb-1 text-xs md:text-xs">{t.contact.nameLabel}</label>
-                <input 
-                  type="text" 
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-2 md:px-3 py-1.5 md:py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition text-xs md:text-xs"
-                  placeholder="Your name"
-                />
-              </div>
-              <div>
-                <label className="block text-gray-700 font-medium mb-1 text-xs md:text-xs">{t.contact.emailLabel}</label>
-                <input 
-                  type="email" 
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-2 md:px-3 py-1.5 md:py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition text-xs md:text-xs"
-                  placeholder="your@email.com"
-                />
-              </div>
-              <div>
-                <label className="block text-gray-700 font-medium mb-1 text-xs md:text-xs">{t.contact.phoneLabel}</label>
-                <input 
-                  type="tel" 
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-2 md:px-3 py-1.5 md:py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition text-xs md:text-xs"
-                  placeholder="+91-XXX-XXX-XXXX"
-                />
-              </div>
-              <div>
-                <label className="block text-gray-700 font-medium mb-1 text-xs md:text-xs">{t.contact.messageLabel}</label>
-                <textarea 
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows="2" 
-                  className="w-full px-2 md:px-3 py-1.5 md:py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition text-xs md:text-xs"
-                  placeholder="Tell us about your requirements..."
-                ></textarea>
-              </div>
-              <button 
-                type="submit" 
-                className="w-full bg-gradient-to-r from-light to-accent text-white py-2 md:py-2 rounded-lg font-semibold text-sm md:text-sm hover:shadow-xl transition-all hover:-translate-y-0.5 mt-auto"
+            <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
+              Send us a quick message on WhatsApp and our team will get back to you shortly.
+            </p>
+            <div className="flex flex-col gap-3 mt-2">
+              <a
+                href="https://wa.me/919788778666?text=Hello%20NSK%20Agro%20Industries%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-full bg-gradient-to-r from-primary to-[#1f4d2d] text-white py-3 rounded-lg font-semibold text-base md:text-lg shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5"
+                aria-label="Chat on WhatsApp"
               >
-                ✉️ Send Message
-              </button>
-            </form>
+                WhatsApp Us
+              </a>
+              <a
+                href="https://www.instagram.com/nskagroindustries/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-full bg-white text-primary border border-primary/20 py-3 rounded-lg font-semibold text-base md:text-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5"
+                aria-label="Visit Instagram profile"
+              >
+                Instagram
+              </a>
+            </div>
           </div>
           
           {/* Contact Information */}
