@@ -37,7 +37,7 @@ const Contact = () => {
           <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-primary/10 flex flex-col justify-center">
             <h3 className="text-base md:text-lg font-semibold text-gray-800 mb-3 md:mb-4">{t.contact.quoteHeading}</h3>
             <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
-              Send us a quick message on WhatsApp and our team will get back to you shortly.
+              {t.contact.quickMessage}
             </p>
             <div className="flex flex-col gap-3 mt-2">
               <a
