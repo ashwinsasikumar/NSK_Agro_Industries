@@ -107,7 +107,7 @@ export const translations = {
         },
         {
           title: 'Egg Tray',
-          desc: 'Classic, heavy-duty [6,12,15,20,30] - Cell Egg Trays engineered to absorb shocks and protect eggs during storage and high-volume transit.',
+          desc: 'Classic, heavy-duty [6,12,18,30] - Cell Egg Trays engineered to absorb shocks and protect eggs during storage and high-volume transit.',
           badge: 'Poultry Farms'
         },
         {
@@ -192,7 +192,7 @@ export const translations = {
       products: 'Products',
       contact: 'Contact',
       ourProduct: 'Our Product',
-      product1: '(6,12,15,20,30)-Cell Egg Trays',
+      product1: '[6,12,18,30] - Cell Egg Trays',
       product2: 'Industrial Protective Packaging',
       product3: 'Food Grade Pulp Packaging',
       product4: 'Egg Carton & Egg Boxes',
@@ -308,7 +308,7 @@ export const translations = {
           badge: 'சில்லறை விற்பனை'
         },
         {
-          title: '[6,12,15,20,30] - செல்கள் முட்டை தட்டு',
+          title: '[6,12,18,30] - செல்கள் முட்டை தட்டு',
           desc: 'குறைந்த அதிர்ச்சி மற்றும் அதிக அளவு போக்குவரத்தின் போது முட்டைகளை பாதுகாக்க வடிவமைக்கப்பட்ட வலுவான [6,12,15,20,30] - செல் முட்டை தட்டுகள்.',
           badge: 'கோழிப்பண்ணைகள்'
         },
@@ -394,7 +394,7 @@ export const translations = {
       products: 'தயாரிப்புகள்',
       contact: 'தொடர்பு',
       ourProduct: 'எங்கள் தயாரிப்பு',
-      product1: '[6,12,15,20,30]-செல் முட்டை தட்டுகள்',
+      product1: '[6,12,18,30]-செல் முட்டை தட்டுகள்',
       product2: 'தொழில்துறை பாதுகாப்பு பேக்கேஜிங்',
       product3: 'உணவு தர கூழ் பேக்கேஜிங்',
       product4: 'முட்டை அட்டைப்பெட்டி & முட்டை பெட்டிகள்',
